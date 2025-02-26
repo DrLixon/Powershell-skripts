@@ -1,4 +1,4 @@
-Different scripts for inspecting network system health. It is relevant for Windows Servers and Exchange servers.
+Different scripts for inspecting network system health relevant for Windows Servers and Exchange servers.
 
 script name:  ExchangeCheckMailboxLocation.ps1
 description:  Get all Exchange arbitrage mailboxes.
