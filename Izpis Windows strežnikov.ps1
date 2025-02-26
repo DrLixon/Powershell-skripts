@@ -33,7 +33,7 @@ $servers = Get-ADComputer -Filter {(Enabled -eq $True) -and (OperatingSystem -li
 $serverList = $servers | Select-Object Name, IPv4Address, OperatingSystem, OperatingSystemVersion
 
 # Izvozi rezultate v CSV datoteko
-$results | Export-Csv -Path "$global:OutputFolderPath\$global:OutputFileName" -NoTypeInformation -Encoding UTF8
+$serverList | Export-Csv -Path "$global:OutputFilePath\$global:OutputFileName" -NoTypeInformation -Encoding UTF8
 
 Write-Host ""
-Write-Host "Exported server list to $global:OutputFolderPath\$global:OutputFileName"
+Write-Host "Exported server list to $global:OutputFilePath\$global:OutputFileName"
