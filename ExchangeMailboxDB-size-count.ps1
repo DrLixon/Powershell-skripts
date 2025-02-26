@@ -1,0 +1,1 @@
+﻿Get-MailboxDatabase -Status | Select-Object Name, DatabaseSize, AvailableNewMailboxSpace, @{Name="MailboxCount";Expression={(Get-Mailbox -Database $_.Name).Count}} | Format-Table -AutoSize

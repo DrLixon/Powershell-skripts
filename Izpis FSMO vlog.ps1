@@ -67,6 +67,6 @@ $fsmoRoles += [PSCustomObject]@{
 $fsmoRoles | Format-Table -AutoSize
 
 # Shranite rezultate v CSV datoteko
-$fsmoRoles | Export-Csv -Path $global:OutputFilePath -NoTypeInformation -Encoding UTF8
+$fsmoRoles | Export-Csv -Path $global:OutputFilePath\$global:OutputFileName -NoTypeInformation -Encoding UTF8
 
-Write-Host "FSMO roles exported to $global:OutputFilePath"
+Write-Host "FSMO roles exported to $global:OutputFilePath\$global:OutputFileName"

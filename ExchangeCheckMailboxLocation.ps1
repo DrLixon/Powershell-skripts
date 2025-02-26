@@ -1,0 +1,1 @@
+﻿Get-Mailbox -ResultSize Unlimited | Get-MailboxStatistics | Select-Object DisplayName, ServerName, DatabaseName | Format-Table -AutoSize
